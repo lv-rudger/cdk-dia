@@ -21,6 +21,7 @@ jobs:
 
       - name: Unit/Snapshot tests
         run: |
+            npx browserslist@latest --update-db --yes
             npm run test
             npx eslint . --ext .ts || true
 
