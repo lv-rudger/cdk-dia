@@ -8,7 +8,9 @@
     "prepublishOnly": "./scripts/npm-prepare.sh",
     "test": "tsc && jest"
   },
-  "bin": "dist/bin/cli.js",
+  "bin": {
+    "cdk-dia": "dist/bin/cli.js"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
